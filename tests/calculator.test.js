@@ -1,4 +1,4 @@
-const reverseString = require('../src/calculator.js');
+const calculator = require('../src/calculator.js');
 
 test('adds two numbers', () => {
     expect(calculator.add(1, 2)).toBe(3);
