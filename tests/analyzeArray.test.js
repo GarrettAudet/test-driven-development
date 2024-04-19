@@ -107,5 +107,5 @@ test('Testing with non-numeric values', () => {
         max: null,
         length: null  
     };
-    expect(() => analyzeArray(input)).toThrow('Invalid input');
+    expect(() => analyzeArray(input)).toThrow('Invalid Input');
 });
