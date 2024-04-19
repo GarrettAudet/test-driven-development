@@ -1,4 +1,4 @@
-function analyseArray(array) {
+function analyzeArray(array) {
     var sum;
     var min;
     var max;
@@ -6,18 +6,19 @@ function analyseArray(array) {
 
     if (length === 0) {
         return {
-            average: null,  // or some other sensible default or error handling
+            average: null,  
             min: null,
             max: null,
             length: 0
         };
     }
 
-    for (i = 0; i < length; i++) {
+    for (var i = 0; i < length; i++) {
 
-        if (array[i].isNaN()) {
+        if (typeof array[i] !== 'number' || isNaN(array[i])) {
+            throw new Error('Invalid Input');
+        }
 
-        } 
         if (array[i] < min) {
             min = array[i];
         } if ( array[i] > max) {
@@ -37,5 +38,5 @@ function analyseArray(array) {
     }
 }
   
-module.exports = analyseArray;
+module.exports = analyzeArray;
   

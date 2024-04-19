@@ -1,4 +1,4 @@
-const analyseArray = require('../src/analyseArray.js');
+const analyzeArray = require('../src/analyzeArray.js');
 
 test('Testing an array with a mixture of positive and negative integers', () => {
     const input = [1, -1, 3, 10, -20];
