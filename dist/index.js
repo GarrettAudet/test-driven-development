@@ -5,5 +5,6 @@ const capitalize = require('../src/capitalize.js');
 // const caesarCipher = require('../src/caesarCipher.js');
 
 module.exports = {
+    array,
     capitalize
 };
